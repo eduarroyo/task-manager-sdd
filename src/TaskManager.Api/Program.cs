@@ -3,6 +3,10 @@ using TaskManager.Infrastructure.Services;
 using TaskManager.Application.Features.Health.GetHealthStatus;
 using TaskManager.Infrastructure.Services.Health;
 using TaskManager.Api.Features.Health.GetHealthStatus;
+using TaskManager.Application.Features.Tasks.CreateTask;
+using TaskManager.Infrastructure.Services.Tasks;
+using TaskManager.Api.Features.Tasks.CreateTask;
+using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +15,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IGreetingService, GreetingService>();
 builder.Services.AddScoped<IGetHealthStatusHandler, GetHealthStatusHandler>();
+builder.Services.AddScoped<ICreateTaskHandler, CreateTaskHandler>();
+
+// Registrar validadores de FluentValidation
+builder.Services.AddValidatorsFromAssemblyContaining<CreateTaskRequestValidator>();
 
 var app = builder.Build();
 
@@ -34,5 +42,8 @@ app.MapGet("/greeting", (IGreetingService greetingService) => Results.Ok(new { M
 
 // Vertical Slice: Health
 app.MapGetHealthStatus();
+
+// Vertical Slice: Tasks
+app.MapCreateTask();
 
 app.Run();

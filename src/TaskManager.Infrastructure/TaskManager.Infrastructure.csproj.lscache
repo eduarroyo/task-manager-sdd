@@ -61,6 +61,7 @@ obj/Debug/net10.0/
 Services/
  GreetingService.cs
  Health/GetHealthStatusHandler.cs
+ Tasks/CreateTaskHandler.cs
 
 [metadataReferences]
 ../
@@ -235,6 +236,7 @@ Services/
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
 <NUGET>/
+ fluentvalidation/12.1.1/lib/net8.0/FluentValidation.dll
  mapster.core/10.0.7/lib/netstandard2.0/Mapster.Core.dll
  mapster/10.0.7/lib/net10.0/Mapster.dll
 

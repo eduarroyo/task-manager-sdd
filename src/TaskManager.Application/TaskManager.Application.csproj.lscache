@@ -57,6 +57,11 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 Features/Health/GetHealthStatus/
  GetHealthStatusResponse.cs
  IGetHealthStatusHandler.cs
+Features/Tasks/CreateTask/
+ CreateTaskRequest.cs
+ CreateTaskRequestValidator.cs
+ CreateTaskResponse.cs
+ ICreateTaskHandler.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  TaskManager.Application.AssemblyInfo.cs
@@ -234,6 +239,7 @@ Services/IGreetingService.cs
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
 <NUGET>/
+ fluentvalidation/12.1.1/lib/net8.0/FluentValidation.dll
  mapster.core/10.0.7/lib/netstandard2.0/Mapster.Core.dll
  mapster/10.0.7/lib/net10.0/Mapster.dll
 
