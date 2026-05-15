@@ -59,9 +59,12 @@ obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  TaskManager.Infrastructure.AssemblyInfo.cs
  TaskManager.Infrastructure.GlobalUsings.g.cs
+Services/GreetingService.cs
 
 [metadataReferences]
-../TaskManager.Domain/obj/Debug/net10.0/ref/TaskManager.Domain.dll
+../
+ TaskManager.Application/obj/Debug/net10.0/ref/TaskManager.Application.dll
+ TaskManager.Domain/obj/Debug/net10.0/ref/TaskManager.Domain.dll
 <DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.8/ref/net10.0/
  Microsoft.CSharp.dll
  Microsoft.VisualBasic.Core.dll
