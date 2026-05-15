@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TaskManager.Application\TaskManager.Application.csproj" />
     <ProjectReference Include="..\TaskManager.Infrastructure\TaskManager.Infrastructure.csproj" />
+    <ProjectReference Include="..\TaskManager.ServiceDefaults\TaskManager.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>

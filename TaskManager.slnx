@@ -1,8 +1,10 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/TaskManager.Api/TaskManager.Api.csproj" />
+    <Project Path="src/TaskManager.AppHost/TaskManager.AppHost.csproj" />
     <Project Path="src/TaskManager.Application/TaskManager.Application.csproj" />
     <Project Path="src/TaskManager.Domain/TaskManager.Domain.csproj" />
     <Project Path="src/TaskManager.Infrastructure/TaskManager.Infrastructure.csproj" />
+    <Project Path="src/TaskManager.ServiceDefaults/TaskManager.ServiceDefaults.csproj" />
   </Folder>
 </Solution>
