@@ -55,6 +55,7 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
+Features/Health/GetHealthStatus/Endpoint.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  TaskManager.Api.AssemblyInfo.cs
@@ -376,6 +377,8 @@ Program.cs
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
 <NUGET>/
+ mapster.core/10.0.7/lib/netstandard2.0/Mapster.Core.dll
+ mapster/10.0.7/lib/net10.0/Mapster.dll
  microsoft.openapi/2.4.1/lib/net8.0/Microsoft.OpenApi.dll
  swashbuckle.aspnetcore.swagger/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll
  swashbuckle.aspnetcore.swaggergen/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll

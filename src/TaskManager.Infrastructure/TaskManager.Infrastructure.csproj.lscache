@@ -54,12 +54,13 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-Class1.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  TaskManager.Infrastructure.AssemblyInfo.cs
  TaskManager.Infrastructure.GlobalUsings.g.cs
-Services/GreetingService.cs
+Services/
+ GreetingService.cs
+ Health/GetHealthStatusHandler.cs
 
 [metadataReferences]
 ../
@@ -233,6 +234,9 @@ Services/GreetingService.cs
  System.Xml.XPath.dll
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
+<NUGET>/
+ mapster.core/10.0.7/lib/netstandard2.0/Mapster.Core.dll
+ mapster/10.0.7/lib/net10.0/Mapster.dll
 
 [analyzerReferences]
 <DOTNET>/packs/Microsoft.NETCore.App.Ref/10.0.8/analyzers/dotnet/cs/

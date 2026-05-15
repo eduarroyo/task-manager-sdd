@@ -1,5 +1,8 @@
 using TaskManager.Application.Services;
 using TaskManager.Infrastructure.Services;
+using TaskManager.Application.Features.Health.GetHealthStatus;
+using TaskManager.Infrastructure.Services.Health;
+using TaskManager.Api.Features.Health.GetHealthStatus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IGreetingService, GreetingService>();
+builder.Services.AddScoped<IGetHealthStatusHandler, GetHealthStatusHandler>();
 
 var app = builder.Build();
 
@@ -27,5 +31,8 @@ app.MapGet("/health", () => Results.Ok(new { Status = "Healthy", Timestamp = Dat
 app.MapGet("/greeting", (IGreetingService greetingService) => Results.Ok(new { Message = greetingService.GetWelcomeMessage() }))
     .WithName("GetGreeting")
     .WithTags("Health");
+
+// Vertical Slice: Health
+app.MapGetHealthStatus();
 
 app.Run();
